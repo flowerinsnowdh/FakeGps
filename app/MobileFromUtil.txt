@@ -1,12 +1,12 @@
 public class MobileFromUtil {  
-	static private ArrayList<String> List = new ArrayList<>();//多个坐标集合
+	static private ArrayList<String> List = new ArrayList<>();//澶氫釜鍧愭爣闆嗗悎
    
 	/**
 	 * @param urlAll
-	 *            :请求接口
+	 *            :璇锋眰鎺ュ彛
 	 * @param httpArg
-	 *            :参数
-	 * @return 返回结果
+	 *            :鍙傛暟
+	 * @return 杩斿洖缁撴灉
 	 */
 	public static String request(String httpUrl, String httpArg) {
 	    BufferedReader reader = null;
@@ -19,7 +19,7 @@ public class MobileFromUtil {
 	        HttpURLConnection connection = (HttpURLConnection) url
 	                .openConnection();
 	        connection.setRequestMethod("GET");
-	        // 填入apikey到HTTP header
+	        // 濉叆apikey鍒癏TTP header
 	        connection.setRequestProperty("apikey",  "73fd9f7f39f5007eb0ea405b3482a25d");
 	        connection.connect();
 	        InputStream is = connection.getInputStream();
@@ -116,7 +116,7 @@ public class MobileFromUtil {
 		  //  decodeUnicode(jsonResult); 
 			
 			System.out.println(decodeUnicode(jsonResult));
-			//Thread.currentThread().sleep(2000);//毫秒
+			//Thread.currentThread().sleep(2000);//姣
 //			String httpUrl = "http://apis.baidu.com/apistore/mobilephoneservice/mobilephone";
 //			String httpArg = "tel=15846530170";
 //			String jsonResult = request(httpUrl, httpArg);
